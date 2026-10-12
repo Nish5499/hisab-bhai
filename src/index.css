@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #FFFDF5;
+    color: #121212;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  /* Neo-brutalist buttons */
+  .neo-btn {
+    @apply font-bold border-2 border-black rounded-xl px-4 py-2.5 transition-all duration-150 inline-flex items-center justify-center gap-2 select-none;
+    box-shadow: 4px 4px 0px #000000;
+  }
+
+  .neo-btn:hover:not(:disabled) {
+    transform: translate(-1px, -1px);
+    box-shadow: 5px 5px 0px #000000;
+  }
+
+  .neo-btn:active:not(:disabled) {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px #000000;
+  }
+
+  .neo-btn:disabled {
+    @apply opacity-50 cursor-not-allowed bg-gray-200 text-gray-500 border-gray-400;
+    box-shadow: 2px 2px 0px #888888;
+  }
+
+  .neo-btn-primary {
+    @apply neo-btn bg-[#FFE600] text-black hover:bg-[#FFED4A];
+  }
+
+  .neo-btn-pink {
+    @apply neo-btn bg-[#FF4D8D] text-white hover:bg-[#FF337A];
+  }
+
+  .neo-btn-blue {
+    @apply neo-btn bg-[#2B59FF] text-white hover:bg-[#1E4BEA];
+  }
+
+  .neo-btn-green {
+    @apply neo-btn bg-[#22C55E] text-black hover:bg-[#16A34A];
+  }
+
+  .neo-btn-outline {
+    @apply neo-btn bg-white text-black hover:bg-neutral-50;
+  }
+
+  /* Neo-brutalist cards */
+  .neo-card {
+    @apply bg-white border-2 border-black rounded-2xl p-5 transition-all;
+    box-shadow: 4px 4px 0px #000000;
+  }
+
+  .neo-card-interactive {
+    @apply neo-card cursor-pointer hover:-translate-y-1 hover:shadow-[6px_6px_0px_#000000];
+  }
+
+  .neo-badge {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 font-bold text-xs uppercase tracking-wider rounded-lg border-2 border-black;
+    box-shadow: 2px 2px 0px #000000;
+  }
+
+  /* Neo-brutalist inputs */
+  .neo-input {
+    @apply w-full bg-white border-2 border-black rounded-xl px-4 py-3 font-medium placeholder-gray-500 focus:outline-none focus:ring-0 focus:border-black transition-all;
+    box-shadow: 3px 3px 0px #000000;
+  }
+
+  .neo-input:focus {
+    transform: translate(-1px, -1px);
+    box-shadow: 4px 4px 0px #000000;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFDF5;
+}
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 4px;
+}
