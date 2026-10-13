@@ -165,6 +165,6 @@ This produces an optimized production bundle in `dist/` ready for Cloudflare Pag
 
 ---
 
-## 📄 License
+## 📄 License & Credits
 
-MIT License. Built with ❤️ for roommates, trips, and chai breaks.
+MIT License. Built for Indian roommates, trips, and tapris by [Nischay Wade](https://www.linkedin.com/in/nischay-wade-61a5461a8/).

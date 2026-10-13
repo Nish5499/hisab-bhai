@@ -50,6 +50,20 @@ const AppLayout: React.FC = () => {
       <main className="flex-1 max-w-6xl w-full mx-auto p-4 sm:p-6 lg:p-8">
         <Outlet />
       </main>
+      <footer className="border-t-2 border-black/10 py-5 px-4 text-center font-bold text-xs text-neutral-600 mb-14 md:mb-0">
+        <p>
+          © 2026 HisabBhai. Made for Indian roommates, trips &amp; tapris by{' '}
+          <a
+            href="https://www.linkedin.com/in/nischay-wade-61a5461a8/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-black font-black underline hover:text-[#2B59FF] transition-colors"
+          >
+            Nischay Wade
+          </a>
+          .
+        </p>
+      </footer>
       <BottomNav />
     </div>
   );

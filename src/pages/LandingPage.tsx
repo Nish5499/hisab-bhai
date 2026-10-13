@@ -161,7 +161,18 @@ export const LandingPage: React.FC = () => {
       {/* Footer */}
       <footer className="border-t-3 border-black bg-white py-8 px-4 mt-20 text-center font-bold text-xs text-neutral-600">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p>© 2026 HisabBhai. Made for Indian roommates, trips & tapris.</p>
+          <p>
+            © 2026 HisabBhai. Made for Indian roommates, trips &amp; tapris by{' '}
+            <a
+              href="https://www.linkedin.com/in/nischay-wade-61a5461a8/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black font-black underline hover:text-[#2B59FF] transition-colors"
+            >
+              Nischay Wade
+            </a>
+            .
+          </p>
           <div className="flex gap-4">
             <Link to="/login" className="hover:text-black underline">Login</Link>
             <Link to="/signup" className="hover:text-black underline">Sign Up</Link>
